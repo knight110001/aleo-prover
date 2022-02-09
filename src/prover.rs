@@ -246,7 +246,6 @@ impl Prover {
                                         &block_template,
                                         &terminator,
                                         &mut thread_rng(),
-                                        gpu_index,
                                     ) {
                                         if block_height != current_block.load(Ordering::SeqCst) {
                                             debug!(
@@ -321,7 +320,6 @@ impl Prover {
                                     &block_template,
                                     &terminator,
                                     &mut thread_rng(),
-                                    -1,
                                 ) {
                                     if block_height != current_block.load(Ordering::SeqCst) {
                                         debug!(
