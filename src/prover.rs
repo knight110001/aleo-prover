@@ -181,7 +181,7 @@ impl Prover {
         self.router.clone()
     }
 
-    async fn new_work(&self, work: ProverWork) {
+    async fn new_work(&self, work: ProverWork) {  
         let block_template = work.block_template;
         let block_height = block_template.block_height();
         self.current_block.store(block_height, Ordering::SeqCst);

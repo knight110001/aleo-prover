@@ -31,6 +31,7 @@ tokio-stream = "0.1.8"
 futures-util = "0.3.19"
 crossbeam = "0.8.1"
 futures = "0.3.19"
+serde_json = "1.0.74"
 
 [dependencies.tokio]
 version = "1.15.0"
